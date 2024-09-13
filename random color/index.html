@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>random colors</title>
+</head>
+
+<body>
+
+    <section id="body" class="m-0 p-0 flex justify-center items-center h-screen bg-red-400">
+        <div class="container w-1/2 p-10 relative shadow-2xl rounded-2xl">
+            <div class="color-card bg-red-400 absolute" id="color-card">
+
+            </div>
+            <div class="content flex justify-center items-center flex-col">
+                <span id="hex" class="block text-white text-4xl m-10 uppercase">#fff000</span>
+                <button onclick="randomColor()"
+                    class="bg-transparent border border-white py-3 px-10 cursor-pointer text-white">get new
+                    color</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <div class="name">
+            <h1>JavaScript</h1>
+            <h2>Password Strength Indicator</h2>
+        </div>
+        <form action="#" id="form">
+            <div class="password_warning">
+               <div class="password">
+                <input type="password" name="password" id="password_input" required>
+                <p onsubmit="checkfullstaus()">></p>
+               </div>
+                <div class="status_and_newPass">
+                    <p id="password_status">Password Status</p>
+                    <div id="new_paas_and_alert">
+                        <q id="new_pass">New Password </q><span id="copied_indicator">Click to Copy</span>
+                    </div>
+                    
+                </div>
+                <div id="fullcheck">
+                <div class="password_full_status_div"><span id="fullstatus1_right">&#10004;</span><span id="fullstatus1_wrong">&#10008;</span><p id="fullstatus1">Password Have Capital letter</p></div>
+                <div class="password_full_status_div"><span id="fullstatus2_right">&#10004;</span><span id="fullstatus2_wrong">&#10008;</span><p id="fullstatus2">Password Have Small letter</p></div>
+                <div class="password_full_status_div"><span id="fullstatus3_right">&#10004;</span><span id="fullstatus3_wrong">&#10008;</span><p id="fullstatus3">Password Have Number</p></div>
+                <div class="password_full_status_div"><span id="fullstatus4_right">&#10004;</span><span id="fullstatus4_wrong">&#10008;</span><p id="fullstatus4">Password Have Symbol</p></div>
+                <div class="password_full_status_div"><span id="fullstatus5_right">&#10004;</span><span id="fullstatus5_wrong">&#10008;</span><p id="fullstatus5">Password Have Minimum 6 Characters</p></div>
+                <p id="generate_pass" onclick="generate_pass()">Generate One</p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <script src="minify.js"></script>
+</body>
+</html>

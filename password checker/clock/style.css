@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    border: 1px solid;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock{
+    width: 200px;
+    position: relative;
+    height: 200px;
+    margin-top: 3%;
+    /* margin-left: 20%; */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Horlo%C4%9Do_001.svg/1024px-Horlo%C4%9Do_001.svg.png);
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cddbd5;
+box-shadow: 0px 0px 20px 13px rgb(96 96 96 / 7%), 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.hr,.min,.sec{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid yellow; */
+    display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      position: absolute;
+      /* border-radius: 50%; */
+}
+.hr{
+     transform: rotate(0deg);
+}
+.min{
+     transform: rotate(100deg);
+}
+.sec{
+     transform: rotate(200deg);
+}
+.hr::before{
+    content: '';
+     position: absolute;
+     width: 3.5px;
+     margin-top: 10px;
+     height: 40px;
+     background-color: #ff105e;
+     z-index: 10;
+     border-radius: 6px 6px 0 0;
+}
+.min::before{
+    content: '';
+     position: absolute;
+     width: 2.5px;
+     margin-top: 5px;
+     height: 45px;
+     background-color: #020202;
+     z-index: 10;
+     border-radius: 6px 6px 0 0;
+}
+.sec::before{
+    content: '';
+     position: absolute;
+     width: 1.5px;
+     height: 70px;
+     background-color: #ffffff;
+     z-index: 10;
+     border-radius: 6px 6px 0 0;
+}
+.clock::before{
+    content: '';
+     position: absolute;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background-color: #ffffff;
+     z-index: 10;
+}
+.ownerName{
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    position: absolute;
+    bottom: 50px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+.another_clock{
+    display: flex;
+    width: 200px;
+    border: 2px solid #383838;
+    border-width: 0px 2px 6px 2px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: #020202;
+    border-radius: 5px 5px 10px 10px;
+    justify-content: space-around;
+    position: absolute;
+    left: 100px;
+    bottom: 109px;
+    align-items: center;
+    transform: rotate3d(1, 1, 1, 350deg);
+}
